@@ -2,6 +2,7 @@ module.exports = app => {
   // Your code here
   app.log('Yay, the app was loaded!')
 
+
   // For more information on building apps:
   // https://probot.github.io/docs/
 

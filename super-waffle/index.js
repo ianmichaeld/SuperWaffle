@@ -1,7 +1,11 @@
 module.exports = app => {
-  // Your code here
   app.log('Yay, the app was loaded!')
 
+  app.on('push', async context => {
+    app.log('Sent a push')
+    let output = await context
+    app.log(output)
+  })
 
   // For more information on building apps:
   // https://probot.github.io/docs/
